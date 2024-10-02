@@ -22,4 +22,4 @@ scrape_configs:
 - job_name: story-validator
   static_configs:
   - targets: 
-    - 91.227.33.18:46760
+    - ip:port
