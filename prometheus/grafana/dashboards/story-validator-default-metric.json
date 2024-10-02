@@ -1,0 +1,2379 @@
+{
+    "annotations":
+    {
+        "list":
+        [
+            {
+                "builtIn": 1,
+                "datasource":
+                {
+                    "type": "grafana",
+                    "uid": "-- Grafana --"
+                },
+                "enable": true,
+                "hide": true,
+                "iconColor": "rgba(0, 211, 255, 1)",
+                "name": "Annotations & Alerts",
+                "type": "dashboard"
+            }
+        ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 5,
+    "links":
+    [],
+    "panels":
+    [
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "thresholds"
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 0,
+                "y": 0
+            },
+            "id": 1,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "area",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_height",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Height",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "thresholds"
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 8,
+                "y": 0
+            },
+            "id": 2,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "area",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_latest_block_height",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Latest Block Height",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "thresholds"
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 16,
+                "y": 0
+            },
+            "id": 3,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "area",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_num_txs",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Number of Transactions",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "thresholds"
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 200
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 0,
+                "y": 7
+            },
+            "id": 4,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "area",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_validators",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Number of Validators",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "thresholds"
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 10
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 8,
+                "y": 7
+            },
+            "id": 8,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "area",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_byzantine_validators",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Number of Byzantine Validators",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 16,
+                "y": 7
+            },
+            "id": 14,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_p2p_peer_receive_bytes_total",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Receive Bytes",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 0,
+                "y": 14
+            },
+            "id": 5,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_validators_power",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Total Power of Validators",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "default": false,
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 8,
+                "y": 14
+            },
+            "id": 7,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "editorMode": "code",
+                    "expr": "cometbft_consensus_block_size_bytes",
+                    "legendFormat": "{{ value }}",
+                    "range": true,
+                    "refId": "A"
+                }
+            ],
+            "title": "Block Size",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 16,
+                "y": 14
+            },
+            "id": 18,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_rounds",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Number of Rounds",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 0,
+                "y": 21
+            },
+            "id": 6,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_block_interval_seconds",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Block Interval",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 8,
+                "y": 21
+            },
+            "id": 9,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_byzantine_validators_power",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Total Power of Byzantine Validators",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 16,
+                "y": 21
+            },
+            "id": 22,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_state_validator_set_updates",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Validator Set Updates",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 0,
+                "y": 28
+            },
+            "id": 10,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_mempool_size",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Mempool Size",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 8,
+                "y": 28
+            },
+            "id": 11,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_mempool_size_bytes",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Mempool Size Bytes",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 16,
+                "y": 28
+            },
+            "id": 13,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_p2p_peer_pending_send_bytes",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Pending Send Bytes",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 0,
+                "y": 35
+            },
+            "id": 12,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_p2p_peers",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Number of Peers",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "default": false,
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 8,
+                "y": 35
+            },
+            "id": 17,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "editorMode": "code",
+                    "expr": "cometbft_consensus_round_voting_power_percent",
+                    "legendFormat": "{{ value }}",
+                    "range": true,
+                    "ref Id": "A",
+                    "refId": "A"
+                }
+            ],
+            "title": "Round Voting Power Percent",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 16,
+                "y": 35
+            },
+            "id": 21,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_state_consensus_param_updates",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Consensus Param Updates",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 0,
+                "y": 42
+            },
+            "id": 15,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_p2p_peer_send_bytes_total",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Send Bytes",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 8,
+                "y": 42
+            },
+            "id": 16,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_round_duration_seconds",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Round Duration",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 16,
+                "y": 42
+            },
+            "id": 19,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_consensus_step_duration_seconds",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Step Duration",
+            "type": "timeseries"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "palette-classic"
+                    },
+                    "custom":
+                    {
+                        "axisBorderShow": false,
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "barWidthFactor": 0.6,
+                        "drawStyle": "points",
+                        "fillOpacity": 0,
+                        "gradientMode": "none",
+                        "hideFrom":
+                        {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "insertNulls": false,
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution":
+                        {
+                            "type": "linear"
+                        },
+                        "showPoints": "auto",
+                        "spanNulls": false,
+                        "stacking":
+                        {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle":
+                        {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 7,
+                "w": 8,
+                "x": 0,
+                "y": 49
+            },
+            "id": 20,
+            "options":
+            {
+                "legend":
+                {
+                    "calcs":
+                    [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip":
+                {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "cometbft_state_block_processing_time",
+                    "legendFormat": "{{ value }}",
+                    "refId": "A"
+                }
+            ],
+            "title": "Block Processing Time",
+            "type": "timeseries"
+        }
+    ],
+    "refresh": "30s",
+    "schemaVersion": 39,
+    "tags":
+    [],
+    "templating":
+    {
+        "list":
+        []
+    },
+    "time":
+    {
+        "from": "now-30m",
+        "to": "now"
+    },
+    "timepicker":
+    {},
+    "timezone": "",
+    "title": "Validator Network Dashboard (Prometheus)",
+    "uid": "validator-network-dashboard",
+    "version": 12,
+    "weekStart": ""
+}
