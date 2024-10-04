@@ -1,0 +1,923 @@
+{
+    "annotations":
+    {
+        "list":
+        [
+            {
+                "builtIn": 1,
+                "datasource":
+                {
+                    "type": "grafana",
+                    "uid": "-- Grafana --"
+                },
+                "enable": true,
+                "hide": true,
+                "iconColor": "rgba(0, 211, 255, 1)",
+                "name": "Annotations & Alerts",
+                "type": "dashboard"
+            }
+        ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 14,
+    "links":
+    [],
+    "panels":
+    [
+        {
+            "datasource":
+            {
+                "default": false,
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "mappings":
+                    [],
+                    "max": 100,
+                    "min": 0,
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "red",
+                                "value": null
+                            },
+                            {
+                                "color": "green",
+                                "value": 80
+                            }
+                        ]
+                    },
+                    "unit": "percent"
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 8,
+                "w": 6,
+                "x": 0,
+                "y": 0
+            },
+            "id": 1,
+            "options":
+            {
+                "minVizHeight": 75,
+                "minVizWidth": 75,
+                "orientation": "auto",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "calculation": "lastNotNull",
+                    "fields": "",
+                    "values": false
+                },
+                "showThresholdLabels": false,
+                "showThresholdMarkers": true,
+                "sizing": "auto"
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "editorMode": "code",
+                    "expr": "story_validator_uptime_percentage",
+                    "format": "time_series",
+                    "legendFormat": " ",
+                    "range": true,
+                    "refId": "A"
+                }
+            ],
+            "title": "Validator Uptime Percentage",
+            "type": "gauge"
+        },
+        {
+            "datasource":
+            {
+                "default": false,
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "mappings":
+                    [
+                        {
+                            "options":
+                            {
+                                "1":
+                                {
+                                    "color": "dark-green",
+                                    "index": 0,
+                                    "text": "ACTIVE"
+                                },
+                                "2":
+                                {
+                                    "color": "dark-red",
+                                    "index": 1,
+                                    "text": "JAILED"
+                                },
+                                "3":
+                                {
+                                    "color": "dark-yellow",
+                                    "index": 2,
+                                    "text": "INACTIVE"
+                                }
+                            },
+                            "type": "value"
+                        }
+                    ],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "yellow",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 2
+                            },
+                            {
+                                "color": "green",
+                                "value": 1
+                            }
+                        ]
+                    }
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 4,
+                "w": 4,
+                "x": 6,
+                "y": 0
+            },
+            "id": 2,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "none",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "calculation": "lastNotNull",
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "editorMode": "code",
+                    "expr": "story_validator_state",
+                    "format": "time_series",
+                    "legendFormat": " ",
+                    "range": true,
+                    "refId": "A"
+                }
+            ],
+            "title": "Validator State",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "default": false,
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            }
+                        ]
+                    },
+                    "unit": "none"
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 4,
+                "w": 3,
+                "x": 10,
+                "y": 0
+            },
+            "id": 12,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "none",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "editorMode": "code",
+                    "expr": "story_validator_delegators",
+                    "format": "time_series",
+                    "legendFormat": " ",
+                    "range": true,
+                    "refId": "A"
+                }
+            ],
+            "title": "Number Delegators",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "default": false,
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "mappings":
+                    [
+                        {
+                            "options":
+                            {
+                                "-1":
+                                {
+                                    "index": 0,
+                                    "text": "N/A"
+                                }
+                            },
+                            "type": "value"
+                        }
+                    ],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    },
+                    "unit": "none"
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 8,
+                "w": 5,
+                "x": 13,
+                "y": 0
+            },
+            "id": 3,
+            "options":
+            {
+                "minVizHeight": 75,
+                "minVizWidth": 75,
+                "orientation": "auto",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "calculation": "lastNotNull",
+                    "fields": "",
+                    "values": false
+                },
+                "showThresholdLabels": false,
+                "showThresholdMarkers": true,
+                "sizing": "auto"
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "editorMode": "code",
+                    "expr": "story_validator_missed_blocks",
+                    "format": "time_series",
+                    "interval": "",
+                    "legendFormat": " ",
+                    "range": true,
+                    "refId": "A"
+                }
+            ],
+            "title": "Validator Missed Last 120 Blocks",
+            "type": "gauge"
+        },
+        {
+            "datasource":
+            {
+                "default": false,
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "mappings":
+                    [
+                        {
+                            "options":
+                            {
+                                "-1":
+                                {
+                                    "index": 0,
+                                    "text": "N/A"
+                                }
+                            },
+                            "type": "value"
+                        }
+                    ],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    },
+                    "unit": "none"
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 4,
+                "w": 4,
+                "x": 6,
+                "y": 4
+            },
+            "id": 9,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "none",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "editorMode": "code",
+                    "expr": "story_validator_active_set_rank",
+                    "format": "time_series",
+                    "legendFormat": " ",
+                    "range": true,
+                    "refId": "A"
+                }
+            ],
+            "title": "Validator Active Rank",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "default": false,
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            }
+                        ]
+                    },
+                    "unit": "percentunit"
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 4,
+                "w": 3,
+                "x": 10,
+                "y": 4
+            },
+            "id": 10,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "none",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "editorMode": "code",
+                    "expr": "story_validator_commission",
+                    "format": "time_series",
+                    "legendFormat": " ",
+                    "range": true,
+                    "refId": "A"
+                }
+            ],
+            "title": "Validator Commission",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "default": false,
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "thresholds"
+                    },
+                    "fieldMinMax": false,
+                    "mappings":
+                    [
+                        {
+                            "options":
+                            {
+                                "-1":
+                                {
+                                    "index": 0,
+                                    "text": "N/A"
+                                }
+                            },
+                            "type": "value"
+                        }
+                    ],
+                    "thresholds":
+                    {
+                        "mode": "percentage",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            }
+                        ]
+                    },
+                    "unit": "none"
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 4,
+                "w": 18,
+                "x": 0,
+                "y": 8
+            },
+            "id": 11,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "none",
+                "justifyMode": "center",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "text":
+                {
+                    "valueSize": 50
+                },
+                "textMode": "value",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "editorMode": "code",
+                    "exemplar": false,
+                    "expr": "story_validator_total_bonds",
+                    "format": "time_series",
+                    "range": true,
+                    "refId": "A"
+                }
+            ],
+            "title": "Validator Bonded",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            }
+                        ]
+                    },
+                    "unit": "none"
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 6,
+                "w": 7,
+                "x": 0,
+                "y": 12
+            },
+            "id": 8,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "none",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "story_network_stake_threshold",
+                    "format": "time_series",
+                    "refId": "A"
+                }
+            ],
+            "title": "Network Stake Threshold",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "mappings":
+                    [],
+                    "thresholds":
+                    {
+                        "mode": "absolute",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            }
+                        ]
+                    },
+                    "unit": "none"
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 6,
+                "w": 3,
+                "x": 7,
+                "y": 12
+            },
+            "id": 6,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "none",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "expr": "story_network_max_set_size",
+                    "format": "time_series",
+                    "refId": "A"
+                }
+            ],
+            "title": "Max Validator Size",
+            "type": "stat"
+        },
+        {
+            "datasource":
+            {
+                "default": false,
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+            },
+            "fieldConfig":
+            {
+                "defaults":
+                {
+                    "color":
+                    {
+                        "mode": "thresholds"
+                    },
+                    "fieldMinMax": false,
+                    "mappings":
+                    [
+                        {
+                            "options":
+                            {
+                                "-1":
+                                {
+                                    "index": 0,
+                                    "text": "N/A"
+                                }
+                            },
+                            "type": "value"
+                        }
+                    ],
+                    "thresholds":
+                    {
+                        "mode": "percentage",
+                        "steps":
+                        [
+                            {
+                                "color": "green",
+                                "value": null
+                            }
+                        ]
+                    },
+                    "unit": "none"
+                },
+                "overrides":
+                []
+            },
+            "gridPos":
+            {
+                "h": 6,
+                "w": 8,
+                "x": 10,
+                "y": 12
+            },
+            "id": 7,
+            "options":
+            {
+                "colorMode": "value",
+                "graphMode": "none",
+                "justifyMode": "center",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions":
+                {
+                    "calcs":
+                    [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "showPercentChange": false,
+                "text":
+                {},
+                "textMode": "value",
+                "wideLayout": true
+            },
+            "pluginVersion": "11.2.0",
+            "targets":
+            [
+                {
+                    "datasource":
+                    {
+                        "type": "prometheus",
+                        "uid": "PBFA97CFB590B2093"
+                    },
+                    "editorMode": "code",
+                    "exemplar": false,
+                    "expr": "story_network_lowest_active_set_stake",
+                    "format": "time_series",
+                    "range": true,
+                    "refId": "A"
+                }
+            ],
+            "title": "Network Lowest Active Set Stake",
+            "type": "stat"
+        }
+    ],
+    "refresh": "5s",
+    "schemaVersion": 39,
+    "tags":
+    [],
+    "templating":
+    {
+        "list":
+        []
+    },
+    "time":
+    {
+        "from": "now-30m",
+        "to": "now"
+    },
+    "timepicker":
+    {},
+    "timezone": "",
+    "title": "Validator  Monitoring ( Custom node Exporter)",
+    "uid": "validator-gc-monitoring1",
+    "version": 14,
+    "weekStart": ""
+}
